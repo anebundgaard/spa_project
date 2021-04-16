@@ -1,0 +1,33 @@
+@import "../src/components/desktop/DesktopStyle.scss"; 
+
+body{
+    background-color: #b1d2e8;
+    margin:auto; 
+    width:900px;
+    height:auto; 
+}
+
+#navContainer{
+}
+
+#logo{
+}
+
+#desktopContainer{
+}
+
+#mobileContainer{
+}
+
+nav ul{
+    list-style-type: none;
+    display:flex; 
+
+    display:grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: auto auto;
+}
+
+#hoverLine{
+    display:block; 
+}

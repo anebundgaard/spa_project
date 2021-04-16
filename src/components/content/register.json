@@ -1,0 +1,45 @@
+{
+    "logo": [
+        {
+            "main": "assets/logo/logo-final.png",
+            "lightblue": "assets/logo/logo-a.png",
+            "nude": "assets/logo/logo-b.png"
+        }
+    ],
+    "desktop_front": [
+        {
+            "src": "assets/front_desktop/whatwedo.png"
+        },
+        {
+            "src": "assets/front_desktop/maintainable.png"
+        },
+        {
+            "src": "assets/front_desktop/getintouch.png"
+        }
+    ],
+    "desktop_menu": [
+        {
+            "whatwedo": "assets/front_desktop/front_whatwedo_link.png",
+            "maintainable": "assets/front_desktop/front_maintainable.link.png",
+            "getintouch": "assets/front_desktop/front_getintouch_link.png"
+        }
+    ],
+    "mobile_front": [
+        {
+            "src": "assets/front_mobil/whatwedo.png"
+        },
+        {
+            "src": "assets/front_mobil/maintainable.png"
+        },
+        {
+            "src": "assets/front_mobil/getintouch.png"
+        }
+    ],
+    "smallImg": [
+        {
+            "whatwedo": "assets/front_desktop/whatwedo_small.png",
+            "maintainable": "assets/front_desktop/maintainable_small.png",
+            "getintouch": "assets/front_desktop/getintouch_small.png"
+        }
+    ]
+}
