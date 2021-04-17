@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import {Link} from "react-router-dom";
+// COMPONENTS
 import Menu from "./menu.json"; 
+import Register from "../content/register.json";
 import "../../App.scss"; 
 
 const Navigation = () => {
@@ -29,7 +31,6 @@ const Navigation = () => {
         }
     }
 
-
     return (
         <>
         <div id="navContainer">
@@ -45,6 +46,14 @@ const Navigation = () => {
                 <img src={image} id="hoverLine"/>
                 </ul>
             </nav>
+            {/* LOGO */}
+            <div id="logo">
+                {
+                    Register.logo.map((data,index) => (
+                        <img src={data.main} />
+                    ))
+                }
+            </div>
         </div>
 
         </>

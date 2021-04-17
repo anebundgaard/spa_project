@@ -1,6 +1,8 @@
 const About = () => {
     return (
-        "desk about"
+        <>
+        
+        </>
     )
 }
 

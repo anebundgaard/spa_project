@@ -13,6 +13,9 @@ import Contact from "./pages/Contact";
 import Navigation from "../nav/Navigation"; 
 // JSON
 import Register from "../content/register.json"; 
+// STYLESHEETS
+import "../desktop/DesktopStyle.scss";
+import "../../App.scss"; 
 
 const Desktopview = () => {
     return (
@@ -23,14 +26,14 @@ const Desktopview = () => {
             <Router>
                 <Navigation />
 
-                <div>
+                <section>
                 <Switch>
                     <Route exact path="/" component={Frontpage} />
                     <Route exact path="/about" component={About} />
                     <Route exact path="/maintainable" component={Maintainable} />
                     <Route exact path="/contact" component={Contact} />
                 </Switch>
-                </div>
+                </section>
                 
             </Router>
 

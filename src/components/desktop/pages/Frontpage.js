@@ -3,16 +3,8 @@ import Register from "../../content/register.json";
 const Frontpage = () => {
     return (
         <>
-        {/* LOGO */}
-        <div id="logo">
-            {
-                Register.logo.map((data,index) => (
-                    <img src={data.main} />
-                ))
-            }
-        </div>
 
-        <div id="imgMap">
+        <div id="frontImgMap">
         {
             Register.desktop_front.map((data,index) => (
                 <img src={data.src} />
@@ -20,7 +12,12 @@ const Frontpage = () => {
         }
         </div>
 
- 
+        <article>
+            {
+                <p>{Register.frontpage_article}</p>
+            }
+        </article>
+
         </>
     )
 }
