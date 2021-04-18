@@ -11,11 +11,8 @@ import About from "./pages/About";
 import Maintainable from "./pages/Maintainable";
 import Contact from "./pages/Contact"; 
 import Navigation from "../nav/Navigation"; 
-// JSON
-import Register from "../content/register.json"; 
 // STYLESHEETS
 import "../desktop/DesktopStyle.scss";
-import "../../App.scss"; 
 
 const Desktopview = () => {
     return (

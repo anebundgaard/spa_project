@@ -12,8 +12,10 @@ import Maintainable from "./pages/Maintainable";
 import Contact from "./pages/Contact"; 
 import Navigation from "../nav/Navigation";
 // STYLESHEET
+import "./MobileStyle.scss"; 
 
 const MobileView = () => {
+
     return (
         <>
         <div id="mobileContainer">
@@ -21,7 +23,7 @@ const MobileView = () => {
 
             <Navigation />
 
-            <div>
+            <div id="mobile_content_wrapper">
             <Switch>
                 <Route exact path="/" component={Frontpage} />
                 <Route exact path="/about" component={About} />

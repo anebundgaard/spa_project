@@ -1,3 +1,5 @@
+import Register from "../../content/register.json"; 
+
 const Frontpage = () => {
     // BACKGROUND COLOR
     if ((window.onload) = (e) => {
@@ -10,6 +12,18 @@ const Frontpage = () => {
     
     return (
         <>
+        <figure id="frontpage_hero_mobile">
+            {
+                Register.mobile_front.map((data,index) => (
+                    <img src={data.src} />
+                ))
+            }
+        </figure>
+
+        <article id="infobox">
+            <p>{Register.frontpage_article}</p>
+        </article>
+
         </>
     )
 }
