@@ -5,6 +5,7 @@
 }
 
 @import "../src/components/desktop/DesktopStyle.scss"; 
+@import "../src/components/mobile/MobileStyle.scss"; 
 
 body{
     background-image:linear-gradient(white, #b1d2e8);  
@@ -16,5 +17,20 @@ nav ul{
     grid-template-rows: auto auto;
     
     list-style-type: none;
+}
+
+#hoverline img{
+    display:none; 
+}
+
+#textbox{
+    h1{
+        font-size: 20px;
+    }
+
+    p{
+        padding-top:10px;
+        color:white; 
+    }
 }
 

@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Maintainable from "./pages/Maintainable";
 import Contact from "./pages/Contact"; 
 import Navigation from "../nav/Navigation";
+// STYLESHEET
 
 const MobileView = () => {
     return (

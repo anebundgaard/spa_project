@@ -22,7 +22,7 @@
     "desktop_menu": [
         {
             "whatwedo": "assets/front_desktop/front_whatwedo_link.png",
-            "maintainable": "assets/front_desktop/front_maintainable.link.png",
+            "maintainable": "assets/front_desktop/front_maintainable_link.png",
             "getintouch": "assets/front_desktop/front_getintouch_link.png"
         }
     ],

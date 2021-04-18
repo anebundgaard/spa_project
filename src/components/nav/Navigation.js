@@ -17,19 +17,10 @@ const Navigation = () => {
     const displayHover = (e) => {
         setIndex(e.currentTarget.dataset.index);
 
-        if (e.currentTarget.dataset.index == 0 ) {
-
-        }
-        if (e.currentTarget.dataset.index == 1 ) {
-            setImage(Menu.hover[0].src); 
-        }
-        if (e.currentTarget.dataset.index == 2 ) {
-            setImage(Menu.hover[1].src); 
-        } 
-        if (e.currentTarget.dataset.index == 3 ) {
-            setImage(Menu.hover[2].src); 
-        }
+        
+        
     }
+
 
     return (
         <>
@@ -38,7 +29,7 @@ const Navigation = () => {
                 <ul>
                     {
                     Menu.menubar.map((data, index) => (
-                        <li id="links" key={"links" + index} onClick={displayHover} data-index={index}>
+                        <li id="links" key={"links" + index} data-index={index}>
                             <Link to={data.link} ><img src={data.src} /></Link>
                         </li>
                     ))
