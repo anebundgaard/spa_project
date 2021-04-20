@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Maintainable from "./pages/Maintainable";
 import Contact from "./pages/Contact"; 
 import Navigation from "../nav/Navigation"; 
+import WeatherApp from "../weather/index";
 // STYLESHEETS
 import "../desktop/DesktopStyle.scss";
 
@@ -34,8 +35,9 @@ const Desktopview = () => {
                 
             </Router>
 
-        </div>
+            <WeatherApp />
 
+        </div>
         
         </>
     )

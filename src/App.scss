@@ -11,16 +11,13 @@ body{
     background-image:linear-gradient(white, #b1d2e8);  
 }
 
-nav ul{
+// NAVIGATION
+#menu{
     display:grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
     
     list-style-type: none;
-}
-
-#hoverline img{
-    display:block; 
 }
 
 #textbox{

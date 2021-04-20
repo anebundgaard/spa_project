@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Maintainable from "./pages/Maintainable";
 import Contact from "./pages/Contact"; 
 import Navigation from "../nav/Navigation";
+import WeatherApp from "../weather/index";
 // STYLESHEET
 import "./MobileStyle.scss"; 
 
@@ -33,6 +34,9 @@ const MobileView = () => {
             </div>
             
         </Router>
+
+        <WeatherApp />
+
         </div>
 
         </>

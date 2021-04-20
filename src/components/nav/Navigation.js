@@ -20,7 +20,7 @@ const Navigation = () => {
         setIndex(e.currentTarget.dataset.index);
 
         if (e.currentTarget.dataset.index == 0 ) {
-
+            
         }
         if (e.currentTarget.dataset.index == 1 ) {
             setImage(Menu.hover[0].src); 
@@ -31,8 +31,6 @@ const Navigation = () => {
         if (e.currentTarget.dataset.index == 3 ) {
             setImage(Menu.hover[2].src); 
         }
-
-        
     }
 
 
@@ -40,7 +38,7 @@ const Navigation = () => {
         <>
         <div id="navContainer">
             <nav>
-                <ul>
+                <ul id="menu">
                     {
                     Menu.menubar.map((data, index) => (
                         <li id="links" key={"links" + index} onClick={displayHover} data-index={index}>
@@ -48,7 +46,7 @@ const Navigation = () => {
                         </li>
                     ))
                 }
-                <img src={image} id="hoverLine"/>
+                <img src={image} id="hoverLine" />
                 </ul>
             </nav>
             {/* LOGO */}

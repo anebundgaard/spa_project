@@ -7,7 +7,7 @@
 
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 5fr;
+    grid-template-rows: 0.1fr 5fr 0.5fr;
 }
 
 // *** NAVIGATION
@@ -27,7 +27,7 @@
     width:100%; 
     height:auto; 
     grid-column:1/-1;
-    grid-row:2/-1;
+    grid-row:2/3;
     padding-top:25px; 
 
     display:grid;
@@ -108,3 +108,5 @@
         }
     }
 }
+
+
