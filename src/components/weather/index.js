@@ -8,7 +8,7 @@ function WeatherApp() {
 
     
     return isLoading ? (
-        <h3 id="loadingResponse">Loading...</h3>
+        <h3 id="loadingResponse">Loading weather forecast...</h3>
     ):(
         <>
             <WeatherData apiData={data}/>

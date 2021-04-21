@@ -4,7 +4,8 @@ import Register from "../content/register.json";
 
 const WeatherData = ({apiData}) => {
 
-   /*
+    /*
+    console.log(apiData.daily[0].weather[0].main); 
     const [image, setImage] = useState(""); 
 
 
