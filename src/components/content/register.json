@@ -51,7 +51,7 @@
             "link":"mn@coolish.com"
         }
     ],
-    "weather": [
+    "weather_forecast": [
         {
             "cloudy":"assets/weather/cloudy.png",
             "rain":"assets/weather/rain.png",

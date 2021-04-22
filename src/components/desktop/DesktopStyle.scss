@@ -7,7 +7,7 @@
 
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 6fr 0.5fr 2fr;
+    grid-template-rows: 1fr 7fr 0.5fr 2fr;
 }
 
 // *** NAVIGATION
@@ -56,7 +56,7 @@ section{
 
     #frontImgMap{
         grid-column: 1/-1;
-        grid-row:1/3;
+        grid-row:1/2;
 
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -130,6 +130,7 @@ section{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    gap:5px;
     
     figure{
         display: grid;
@@ -149,6 +150,12 @@ section{
         
         #tempDay{
             background-color: black;
+        }
+
+        #weatherIcon{
+            img{
+                width:50px;
+            }
         }
     }
 }

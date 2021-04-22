@@ -33,7 +33,6 @@ const Navigation = () => {
         }
     }
 
-
     return (
         <>
         <div id="navContainer">
