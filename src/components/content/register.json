@@ -55,7 +55,7 @@
         {
             "cloudy":"assets/weather/cloudy.png",
             "rain":"assets/weather/rain.png",
-            "sun-rain":"assets/weather/sun-rain.png",
+            "sun-rain":"assets/weather/sunrain.png",
             "sun":"assets/weather/sun.png"
         }
     ],

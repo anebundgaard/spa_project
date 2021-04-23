@@ -6,34 +6,51 @@ import "../../App.scss";
 const WeatherData = ({apiData}) => {
 
     // WEATHER IMAGE LOOP
-    let [image, setImage] = useState(""); 
-    useEffect(() => {
-    
+    const [image_cloud, setImage_cloud] = useState(""); 
+    const [image_clear, setImage_clear] = useState(""); 
+    const [image_rain, setImage_rain] = useState(""); 
+    const [image_sunrain, setImage_sunrain] = useState("");
+    const weatherArray = [];
+
+    //useEffect(() => {
+        
         for(let i=0;i<apiData.daily.length;i++){
     
             if(apiData.daily[i].weather[0].main == "Clear") {
-                setImage(Register.weather_forecast[0].sun)
+                weatherArray.push(Register.weather_forecast[0].sun)
+                //setImage_clear(Register.weather_forecast[0].sun)
             } 
             if (apiData.daily[i].weather[0].main == "Clouds") {
-                setImage(Register.weather_forecast[0].cloudy)
+                weatherArray.push(Register.weather_forecast[0].cloudy)
+                //setImage_cloud(Register.weather_forecast[0].cloudy)
             } 
             if (apiData.daily[i].weather[0].main == "Rain") {
-                setImage(Register.weather_forecast[0].rain)
+                weatherArray.push(Register.weather_forecast[0].rain)
+                //setImage_rain(Register.weather_forecast[0].rain)
             }
             if (apiData.daily[i].weather[0].main == "Sun-rain") {
-                setImage(Register.weather_forecast[0]['sun-rain'])
+                weatherArray.push(Register.weather_forecast[0].sunrain)
+                //setImage_sunrain(Register.weather_forecast[0]['sun-rain'])
             }
-            // console.log(apiData.daily[0].weather[0].main); 
+            //console.log(apiData.daily[i].weather[0].main); 
+            //console.log(setImage)
             // console.log(apiData.daily[i].weather[0].main)
             // console.log(Register.weather_forecast[0].sun)
+            //console.log(weatherArray[i])
         } // END LOOP
-    }, []); // END USEFFECT
+        console.log("hej")
+    //}, []); // END USEFFECT
+
+
+
+    //console.log(Register.weather_forecast[0].cloudy)
     
     return (
     <>
         <div id="weatherContainer">
             {apiData.daily.map((data,index) => (
                 <>
+                {console.log("hej2")}
                 <figure>
                     <div id="day" key={"day" + index}>
                         <h4><Moment unix format="dddd">
@@ -41,7 +58,7 @@ const WeatherData = ({apiData}) => {
                         </Moment></h4>
                     </div>
                     <div id="weatherIcon">
-                       <img src={image} />
+                       <img src={weatherArray[index]} />
                     </div>
                     <div id="tempDay" key={"tempDay" + index}>
                         <p>{Math.round(data.temp.day)}</p>
