@@ -1,6 +1,7 @@
 import Register from "../../content/register.json"; 
 
 const About = () => {
+    // BACKGROUND COLOR
     if ((window.onload) = (e) => {
         document.body.style.background = "#abcfe6"; 
     }) 
@@ -27,7 +28,7 @@ const About = () => {
             </figure>
 
         </>
-    )
-}
+    ) // END RETURN
+} // END CONST
 
 export default About; 

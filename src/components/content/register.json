@@ -21,6 +21,7 @@
     ],
     "desktop_menu": [
         {
+            "front": "assets/front_desktop/front_whatwedo_link.png",
             "whatwedo": "assets/front_desktop/front_whatwedo_link.png",
             "maintainable": "assets/front_desktop/front_maintainable_link.png",
             "getintouch": "assets/front_desktop/front_getintouch_link.png"

@@ -3,16 +3,13 @@ import {Link} from "react-router-dom";
 // COMPONENTS
 import Menu from "./menu.json"; 
 import Register from "../content/register.json";
+// STYLESHEETS
 import "../../App.scss"; 
 import "../desktop/DesktopStyle.scss";
 import "../mobile/MobileStyle.scss";
 
 const Navigation = () => {
-
-    // console.log(Menu.hover[1].src); 
-
-    // HOVER
-    
+   // HOVER
     const [index, setIndex] = useState(0); 
     const [image, setImage] = useState(""); 
 
@@ -59,7 +56,7 @@ const Navigation = () => {
         </div>
 
         </>
-    ); // END RETURN
+    ) // END RETURN
 } // END NAVIGATION
 
 export default Navigation; 

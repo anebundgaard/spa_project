@@ -28,7 +28,7 @@ const Maintainable = () => {
         </article>
 
         </>
-    )
-}
+    ) // END RETURN
+} // END CONST
 
 export default Maintainable; 

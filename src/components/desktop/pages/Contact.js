@@ -45,7 +45,7 @@ const Contact = () => {
             <p>{Register.contact[0].box}</p>
         </article>
         </>
-    )
-}
+    ) // END RETURN
+} // END CONST
 
 export default Contact; 

@@ -1,6 +1,7 @@
 import Register from "../../content/register.json"; 
 
 const Contact = () => {
+    // BACKGROUND COLOR
     if ((window.onload) = (e) => {
         document.body.style.background = "#ffb472"; 
     }) 
@@ -40,7 +41,7 @@ const Contact = () => {
         </figure>
 
     </>
-    )
-}
+    ) // END RETURN
+} // END CONST
 
 export default Contact; 

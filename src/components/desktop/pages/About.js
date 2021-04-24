@@ -1,3 +1,4 @@
+import React, {useEffect} from "react"
 import Register from "../../content/register.json";
 
 const About = () => {
@@ -28,7 +29,7 @@ const About = () => {
         </article>
 
         </>
-    )
-}
+    ) // END RETURN
+} // END CONST
 
 export default About; 

@@ -28,7 +28,7 @@ const Frontpage = () => {
         </article>
 
         </>
-    )
-}
+    ) // END RETURN
+} // END CONST
 
 export default Frontpage; 

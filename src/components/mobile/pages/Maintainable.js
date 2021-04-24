@@ -1,6 +1,7 @@
 import Register from "../../content/register.json"; 
 
 const Maintainable = () => {
+    // BACKGROUND COLOR
     if ((window.onload) = (e) => {
         document.body.style.background = "#bfddef"; 
     }) 
@@ -27,7 +28,7 @@ const Maintainable = () => {
             </figure>
 
         </>
-    )
-}
+    ) // END RETURN
+} // END CONST
 
 export default Maintainable; 
