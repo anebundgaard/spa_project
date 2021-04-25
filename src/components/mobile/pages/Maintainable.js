@@ -1,3 +1,4 @@
+// IMPORT OF COMPONENTS
 import Register from "../../content/register.json"; 
 
 const Maintainable = () => {
@@ -5,7 +6,6 @@ const Maintainable = () => {
     if ((window.onload) = (e) => {
         document.body.style.background = "#bfddef"; 
     }) 
-    
     if ((window.onclick) = (e) => {
         document.body.style.background = "#bfddef"; 
     })
@@ -13,9 +13,7 @@ const Maintainable = () => {
     return (
         <>
             <figure id="mobile_page_hero">
-                {
-                    <img src={Register.mobile_front[1].src} />
-                }
+                {<img src={Register.mobile_front[1].src} alt="Maintainable" />}
             </figure>
 
             <article id="textbox">
@@ -24,11 +22,9 @@ const Maintainable = () => {
             </article>
 
             <figure id="mobile_logo">
-                <img src={Register.logo[0].lightblue} />
+                <img src={Register.logo[0].lightblue} alt="Spa lightblue logo" />
             </figure>
-
         </>
     ) // END RETURN
 } // END CONST
-
 export default Maintainable; 

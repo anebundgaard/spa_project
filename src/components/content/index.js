@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"; 
+// IMPORT OF COMPONENTS
 import DesktopView from "../desktop";
 import MobileView from "../mobile"; 
 
@@ -20,9 +21,8 @@ const Content = () => {
 
         return () => {
             window.removeEventListener('resize',handleResize); 
-        } // end return
-
-    },[]); // end useEffects
+        } // END RETURN
+    },[]); // END USEEFFECTS
 
     const breakpoint = 600;
 

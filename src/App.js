@@ -1,6 +1,4 @@
-import "./App.scss"; 
-import "../src/components/desktop/DesktopStyle.scss";
-import "../src/components/mobile/MobileStyle.scss"
+// IMPORT OF COMPONENTS
 import Content from "./components/content"; 
 
 function App() {

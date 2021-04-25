@@ -9,9 +9,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     gap:20px;
-}
+} // END DESKTOP CONTAINER
 
-// *** NAVIGATION
+// *** DESKTOP NAVIGATION
 #navContainer{
     width:100%;
     grid-column: 1/-1;
@@ -42,7 +42,7 @@
             width:150px;
         }
     }
-}
+} // END DESKTOP NAVIGATION
 
 // *** SECTION
 section{
@@ -121,7 +121,7 @@ section{
         }
     }
 
-}
+} // END SECTION
 
 // WEATHER CONTAINER 
 #weatherContainer{
@@ -175,7 +175,7 @@ section{
             background-color: black;
         }
     }
-}
+} // END WEATHER 
 
 // ***RESPONSIVE DESIGN
 
@@ -211,8 +211,7 @@ section{
                 object-fit: cover;
             }
         }
-        
-    }
+    } // END SECTION
 
     #weatherContainer{
         grid-template-columns: 1fr;
@@ -239,5 +238,5 @@ section{
                 }
             }
         }
-    }
-}
+    } // END WEATHER
+} // END RESPONSIVE 

@@ -1,6 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import Moment from "react-moment";
+// IMPORT OF COMPONENTS
 import Register from "../content/register.json"; 
+// IMPORT OF STYLESHEETS
 import "../../App.scss";  
 
 const WeatherData = ({apiData}) => {
@@ -25,29 +27,31 @@ const WeatherData = ({apiData}) => {
     } // END LOOP
     
     return (
-    <>
-        <div id="weatherContainer">
-            <h2>Weather Forecast</h2>
-                    {apiData.daily.map((data,index) => (
-                        <>
-                        <figure>
-                            <div id="day" key={"day" + index}>
-                                <h4><Moment unix format="dddd">
-                                    {data.dt}
-                                </Moment></h4>
-                            </div>
-                            <div id="weatherIcon">
-                                <img src={weatherArray[index]} />
-                            </div>
-                            <div id="tempDay" key={"tempDay" + index}>
-                                <p>{Math.round(data.temp.day)}</p>
-                            </div>
-                        </figure>
-                        </>
-                    )
-                    )}
-        </div>
-    </>
+        <>
+            <div id="weatherContainer">
+                <h2>Weather Forecast</h2>
+                
+                {apiData.daily.map((data,index) => (
+                <>
+                    <figure>
+                        <div id="day" key={"day" + index}>
+                            <h4><Moment unix format="dddd">
+                                {data.dt}
+                            </Moment></h4>
+                        </div>
+                    
+                        <div id="weatherIcon">
+                            <img src={weatherArray[index]} alt="Weather forecast icons" />
+                        </div>
+                    
+                        <div id="tempDay" key={"tempDay" + index}>
+                            <p>{Math.round(data.temp.day)}</p>
+                        </div>
+                    </figure>
+                </>
+                ))}
+            </div>
+        </>
     ); // END RETURN
 } // END WEATHER DATA 
 

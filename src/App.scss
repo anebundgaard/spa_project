@@ -3,21 +3,48 @@
     padding:0;
     box-sizing: border-box;
 }
-// IMPORTS
+
+// IMPORT OF STYLESHEETS
 @import "../src/components/desktop/DesktopStyle.scss"; 
 @import "../src/components/mobile/MobileStyle.scss"; 
 
-body{
-    background-image:linear-gradient(white, #b1d2e8);  
-}
-
-// NAVIGATION
+// *** MAIN STYLING OF NAVIGATION
 #menu{
     display:grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
     
     list-style-type: none;
+
+    
+    #links{
+        grid-row: 1/2;
+    }
+
+    #children{
+        grid-row:2/3;
+
+        width:90%;
+        height: 10px;
+        border-radius: 10px;
+
+        #children:nth-of-type(1){
+            grid-column: 1/2;
+        }
+
+        #children:nth-of-type(2){
+            grid-column: 2/3;
+        } 
+    
+        #children:nth-of-type(3){
+            grid-column: 3/4;
+        } 
+    
+        #children:nth-of-type(4){
+            grid-column: 4/5;
+        } 
+    }
+
 }
 
 #textbox{
