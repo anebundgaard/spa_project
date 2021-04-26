@@ -96,6 +96,15 @@ section{
         grid-column: 3/-1;
         grid-row: 1/2;
         padding-left:10px;
+
+        h1{
+            font-size: 20px;
+        }
+    
+        p{
+            padding-top:10px;
+            color:white; 
+        }
     }
 
     #imgbox{
@@ -178,7 +187,6 @@ section{
 } // END WEATHER 
 
 // ***RESPONSIVE DESIGN
-
 @media screen and (max-width:800px){
     #desktopContainer{
         width:auto; 

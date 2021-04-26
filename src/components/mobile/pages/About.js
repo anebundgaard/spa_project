@@ -1,7 +1,14 @@
+import React, {useEffect} from "react";
 // IMPORT OF COMPONENTS
 import Register from "../../content/register.json"; 
 
 const About = () => {
+    // MENUBAR HOVER
+    useEffect(() => {
+        document.querySelector(".navi1").style.display="block";
+        document.querySelector(".navi1").style.background="routerButtonColor[e.currentTarget.dataset.index]";
+       }, []);
+
     // BACKGROUND COLOR
     if ((window.onload) = (e) => {
         document.body.style.background = "#abcfe6"; 

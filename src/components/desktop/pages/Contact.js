@@ -3,10 +3,11 @@ import React, {useEffect} from "react";
 import Register from "../../content/register.json";
 
 const Contact = () => {
+    // MENUBAR HOVER
     useEffect(() => {
         document.querySelector(".navi3").style.display="block";
         document.querySelector(".navi3").style.background="routerButtonColor[e.currentTarget.dataset.index]";
-       }, []);
+    }, []);
 
     // BACKGROUND COLOR
     if ((window.onload) = (e) => {

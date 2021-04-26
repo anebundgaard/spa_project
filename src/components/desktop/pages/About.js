@@ -3,11 +3,12 @@ import React, {useEffect} from "react"
 import Register from "../../content/register.json";
 
 const About = () => {
-    
+    // MENUBAR HOVER
     useEffect(() => {
         document.querySelector(".navi1").style.display="block";
         document.querySelector(".navi1").style.background="routerButtonColor[e.currentTarget.dataset.index]";
        }, []);
+
     // BACKGROUND COLOR
     if ((window.onload) = (e) => {
         document.body.style.background = "#abcfe6"; 
@@ -24,9 +25,9 @@ const About = () => {
             </div>
 
             {<article id="textbox">
-                    <h1>{Register.about[0].headline}</h1>
-                    <p>{Register.about[0].text}</p>
-                </article>}
+                <h1>{Register.about[0].headline}</h1>
+                <p>{Register.about[0].text}</p>
+            </article>}
 
             <article id="infobox">
                 <p>{Register.about[0].box}</p>

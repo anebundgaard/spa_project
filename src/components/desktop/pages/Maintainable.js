@@ -3,6 +3,7 @@ import React, {useEffect} from "react";
 import Register from "../../content/register.json";
 
 const Maintainable = () => {
+    // MENUBAR HOVER
     useEffect(() => {
         document.querySelector(".navi2").style.display="block";
         document.querySelector(".navi2").style.background="routerButtonColor[e.currentTarget.dataset.index]";

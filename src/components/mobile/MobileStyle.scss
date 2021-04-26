@@ -69,6 +69,15 @@
     #textbox{
         grid-column: 1/-1;
         grid-row: 2/3;
+
+        h1{
+            font-size: 20px;
+        }
+    
+        p{
+            padding-top:10px;
+            color:white; 
+        }
     }
 
     #mobile_logo{

@@ -7,39 +7,21 @@ import Register from "../content/register.json";
 import "../../App.scss"; 
 
 const Navigation = () => {
-   
-    /*
-    // HOVER
-    const [index, setIndex] = useState(0); 
-    const [image, setImage] = useState(""); 
-
-    
-    const displayHover = (e) => {
-        setIndex(e.currentTarget.dataset.index);
-
-        if (e.currentTarget.dataset.index == 1 ) {
-            setImage(Menu.hover[0].src); 
-        }
-        if (e.currentTarget.dataset.index == 2 ) {
-            setImage(Menu.hover[1].src); 
-        } 
-        if (e.currentTarget.dataset.index == 3 ) {
-            setImage(Menu.hover[2].src); 
-        }
-        onClick={displayHover}
-        <img src={image} id="hoverLine" />
-    }*/
+    // MENUBAR HOVER
     const routerButtonColor= ["#b1d2e800","#184059","#5d8aa6", "#bf7b3f"];
     const [index, setIndex] = useState(0);
 
     const navigator = (e) => {
         setIndex(e.currentTarget.dataset.index);
         
-        let getChildConChild = document.querySelectorAll("#navContainer > nav > ul> div> #children");
+        let getChildConChild = document.querySelectorAll("#navContainer > nav > #menu > div ");
 
         getChildConChild.forEach((item) => {
-            item.style.display="none"; 
+            item.style.height="0"; 
         }) 
+
+        document.querySelector(".navi" + e.currentTarget.dataset.index).style.height = "10px";
+        document.querySelector(".navi" + e.currentTarget.dataset.index).style.backgroundColor = "routerButtonColor[e.currentTarget.dataset.index]";
     }
 
     return (
@@ -52,7 +34,7 @@ const Navigation = () => {
                             <li id="links" key={"links" + index} onClick={navigator} data-index={index}>
                                 <Link to={data.link} ><img src={data.src} alt="Navigation bar" /></Link>
                             </li>
-                            <div id="children" className={"navi" + index} style={{ backgroundColor:routerButtonColor[index]}} ></div>
+                            <div id="children" className={"navi" + index} style={{backgroundColor:routerButtonColor[index]}} ></div>
                         </>
                         ))}
                     </ul>

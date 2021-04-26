@@ -8,14 +8,13 @@
 @import "../src/components/desktop/DesktopStyle.scss"; 
 @import "../src/components/mobile/MobileStyle.scss"; 
 
-// *** MAIN STYLING OF NAVIGATION
+// *** DESKTOP AND MOBILE STYLING OF NAVIGATION
 #menu{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr auto;
     
     list-style-type: none;
-
     
     #links{
         grid-row: 1/2;
@@ -24,8 +23,8 @@
     #children{
         grid-row:2/3;
 
-        width:90%;
-        height: 10px;
+        width:90%; 
+        height:10px;
         border-radius: 10px;
 
         #children:nth-of-type(1){
@@ -44,17 +43,13 @@
             grid-column: 4/5;
         } 
     }
+} // END MENU
 
-}
-
-#textbox{
-    h1{
-        font-size: 20px;
-    }
-
-    p{
-        padding-top:10px;
-        color:white; 
+@media screen and (max-width:600px){
+    #children{
+        width:100%;
     }
 }
+
+
 
