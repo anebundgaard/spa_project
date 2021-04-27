@@ -5,8 +5,8 @@ import Register from "../../content/register.json";
 const Frontpage = () => {
     // MENUBAR HOVER
     useEffect(() => {
-        document.querySelector(".navi0").style.display="block";
-        document.querySelector(".navi0").style.background="routerButtonColor[e.currentTarget.dataset.index]";
+        document.querySelector(".navButton0").style.display="block";
+        document.querySelector(".navButton0").style.background="routerButtonColor[e.currentTarget.dataset.index]";
        }, []);
 
     // BACKGROUND COLOR

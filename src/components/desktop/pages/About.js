@@ -5,8 +5,8 @@ import Register from "../../content/register.json";
 const About = () => {
     // MENUBAR HOVER
     useEffect(() => {
-        document.querySelector(".navi1").style.display="block";
-        document.querySelector(".navi1").style.background="routerButtonColor[e.currentTarget.dataset.index]";
+        document.querySelector(".navButton1").style.display="block";
+        document.querySelector(".navButton1").style.background="routerButtonColor[e.currentTarget.dataset.index]";
        }, []);
 
     // BACKGROUND COLOR
@@ -17,7 +17,14 @@ const About = () => {
         document.body.style.background = "#abcfe6"; 
     })
 
+    // TEST WITH TARGETING SPECIFIC WORDS IN JSON
+    {const string = Register.about[0].headline;
+    const stringColor = string.substring(13);
+    <Text style={}>
 
+    </Text>
+    console.log(stringColor);}
+    
     return (
         <>
             <div id="desktop_page_hero">
