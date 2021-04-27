@@ -20,9 +20,6 @@ const About = () => {
     // TEST WITH TARGETING SPECIFIC WORDS IN JSON
     {const string = Register.about[0].headline;
     const stringColor = string.substring(13);
-    <Text style={}>
-
-    </Text>
     console.log(stringColor);}
     
     return (
