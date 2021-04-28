@@ -16,16 +16,5 @@
             "link":"/contact",
             "src": "assets/navigation/nav-3.png"
         }
-    ],
-    "hover": [
-        {
-            "src": "assets/navigation/nav-1-where.png"
-        },
-        {
-            "src": "assets/navigation/nav-2-where.png"
-        },
-        {
-            "src": "assets/navigation/nav-3-where.png"
-        }
     ]
 }

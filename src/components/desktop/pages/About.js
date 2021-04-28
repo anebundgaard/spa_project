@@ -3,12 +3,6 @@ import React, {useEffect} from "react"
 import Register from "../../content/register.json";
 
 const About = () => {
-    // MENUBAR HOVER
-    useEffect(() => {
-        document.querySelector(".navButton1").style.display="block";
-        document.querySelector(".navButton1").style.background="routerButtonColor[e.currentTarget.dataset.index]";
-       }, []);
-
     // BACKGROUND COLOR
     if ((window.onload) = (e) => {
         document.body.style.background = "#abcfe6"; 
